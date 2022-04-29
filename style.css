@@ -845,6 +845,18 @@ em{
   align-items: flex-start;
 }
 
+@media screen and (max-width: 760px){
+
+  .experience{
+    flex-direction: column;
+  }
+
+  .duration{
+    margin-bottom: 1.6rem;
+  }
+
+}
+
 .duration{
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -882,6 +894,29 @@ em{
 
 #experience{
   filter: none;
+}
+
+@media screen and (max-width: 760px){
+
+  .duration{
+    font-size: 2.0rem;
+    line-height: 2.8rem;
+  }
+
+  .employee{
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+  }
+
+  .exp-details{
+    width: 100%;
+  }
+
+  .role{
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+
 }
 
 .white {
@@ -953,6 +988,22 @@ em{
   line-height: 3.2rem;
 }
 
+@media screen and (max-width: 760px){
+
+  .feedback-section{
+    margin: 0;
+    margin-top: 4.8rem;
+  }
+
+  .feedback-section > p{
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+  }
+
+
+
+}
+
 .green#feedback{
   right:12rem;
   top: 16rem;
@@ -963,6 +1014,20 @@ em{
   left:14rem;
   bottom: 5rem;
   filter: blur(0);
+}
+
+@media screen and (max-width: 760px){
+
+  .green#feedback{
+    right:2rem;
+    top: 24rem;
+  }
+
+  .white#feedback{
+    left:2rem;
+    bottom: 2rem;
+  }
+
 }
 
 .feedback-section > hr{
@@ -982,6 +1047,38 @@ em{
 }
 
 .arrow-btns{
-  position: relative;
+  display: flex;
   margin: auto;
+  margin-top: 4.8rem;
+}
+
+.arrow-btn-group{
+  margin: auto;
+}
+
+.arrow-btn-group > img{
+  width: 4.8rem;
+  opacity: 0.5;
+}
+
+#final-hr{
+  margin: 4.8rem 0;
+}
+
+@media screen and (max-width: 760px){
+
+  .arrow-btn-group > img{
+    display: none;
+  }
+
+  .client-name{
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+  }
+
+  .client-meta{
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+
 }

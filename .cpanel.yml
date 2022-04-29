@@ -1,0 +1,12 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/user/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp .htaaccess $DEPLOYPATH
+    - /bin/cp -R dphi $DEPLOYPATH
+    - /bin/cp -R dhairyadev.in $DEPLOYPATH
+    - /bin/cp -R cgi-bin $DEPLOYPATH
+    - /bin/cp -R casa_mia $DEPLOYPATH
+    - /bin/cp -R Assets $DEPLOYPATH

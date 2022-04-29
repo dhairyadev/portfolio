@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #477b72;
+        stroke-width: 4px;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Check_mark" data-name="Check mark" transform="translate(-975 -4976)">
+    <g id="Ellipse_41" data-name="Ellipse 41" class="cls-1" transform="translate(975 4976)">
+      <circle class="cls-3" cx="18" cy="18" r="18"/>
+      <circle class="cls-4" cx="18" cy="18" r="16"/>
+    </g>
+    <path id="Path_262" data-name="Path 262" class="cls-2" d="M1025.417,5037.5l4.873,4.873,10.158-10.158" transform="translate(-39.917 -42.716)"/>
+  </g>
+</svg>

@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <title>Casa Mia — Book your homestay today!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--LOGIN-->
+    <div class="main-container" id="home">
+      <div class="top-img-container">
+        <div class="navbar" id="home">
+          <div class="location">
+            <div class="icon">
+              <span class="material-icons-round md-14">place</span>
+            </div>
+            <div class="text">
+              Ashok Vihar, New Delhi
+            </div>
+          </div>
+          <div class="hamburger">
+            <span class="material-icons-round md-20">menu</span>
+          </div>
+        </div>
+        <div class="logo" id="home">
+          <div class="logo-img" id="home">
+            <img src="assets\logo_1.svg" alt="">
+          </div>
+          <div class="logo-text">
+            CASA MIA
+          </div>
+        </div>
+        <div class="intro-text">
+          Book Your Home, Away From Home!
+        </div>
+        <button type="button" class="anywhere-btn">
+          <span class="anywhere-btn-txt">Take me anywhere</span>
+          <span class="anywhere-btn-icon"><span class="material-icons-round md-16">public</span></span>
+        </button>
+      </div>
+      <form action="search.html">
+        <div class="form-card" id="home-search">
+          <div class="search-input-field">
+            <span class="material-icons-round md-20  ">map</span>
+            <input type="text" class=".input-city" placeholder="City">
+          </div>
+          <div class="search-input-field" onclick="showDates()" >
+            <span class="material-icons-round md-20  ">date_range</span>
+            <input type="text" class=".input-dates" placeholder="Dates">
+          </div>
+          <div class="search-input-field" onclick="showPersons()" >
+            <span class="material-icons-round md-20  ">people</span>
+            <input type="number" class=".input-pax" placeholder="Persons">
+          </div>
+          <button type="button" class="primary-btn" id="home-search" onclick="location.href='search.html'">
+            <span class="primary_btn_text">Find Casas</span>
+            <span class="material-icons-round  " id="login" >search</span>
+          </button>
+        </div>
+      </form>
+      <div class="quick-actions">
+        <div class="quick-btn">
+          <div class="quick-btn-icon">
+            <span class="material-icons-round md-32  ">tour</span>
+          </div>
+          <div class="quick-btn-text">
+            Trending Casas
+          </div>
+        </div>
+        <div class="quick-btn">
+          <div class="quick-btn-icon">
+            <span class="material-icons-round md-32  ">military_tech</span>
+          </div>
+          <div class="quick-btn-text">
+            Casa Luxe
+          </div>
+        </div>
+        <div class="quick-btn">
+          <div class="quick-btn-icon">
+            <span class="material-icons-round md-32  ">savings</span>
+          </div>
+          <div class="quick-btn-text">
+            Pocket Friendly
+          </div>
+        </div>
+        <div class="quick-btn">
+          <div class="quick-btn-icon">
+            <span class="material-icons-round md-32  ">pets</span>
+          </div>
+          <div class="quick-btn-text">
+            Pet Friendly
+          </div>
+        </div>
+      </div>
+      <div class="home_section" id="weekend">
+        <div class="home_section_title" id="weekend">
+          Weekend Getaways
+        </div>
+        <div class="city_section_cards" id="weekend">
+          <div class="city_section_card_ui" id="weekend">
+            <div class="city_card_ui_img" id="weekend">
+              <img src="assets/Jaipur.jpg" alt="">
+            </div>
+            <div class="city_card_ui_content" id="weekend">
+              <div class="city_card_ui_content_city" id="weekend">
+                Jaipur
+              </div>
+              <div class="city_card_ui_content_state" id="weekend">
+                Rajasthan
+              </div>
+              <div class="city_card_ui_content_dist" id="weekend">
+                <span class="material-icons-round md-12  ">drive_eta</span>
+                4.5-hour drive
+              </div>
+            </div>
+          </div>
+          <div class="city_section_card_ui" id="weekend">
+            <div class="city_card_ui_img" id="weekend">
+              <img src="assets/Taj Mahal.jpg" alt="">
+            </div>
+            <div class="city_card_ui_content" id="weekend">
+              <div class="city_card_ui_content_city" id="weekend">
+                Agra
+              </div>
+              <div class="city_card_ui_content_state" id="weekend">
+                Uttar Pradesh
+              </div>
+              <div class="city_card_ui_content_dist" id="weekend">
+                <span class="material-icons-round md-12  ">drive_eta</span>
+                2-hour drive
+              </div>
+            </div>
+          </div>
+          <div class="city_section_card_ui" id="weekend">
+            <div class="city_card_ui_img" id="weekend">
+              <img src="assets/shimla.jpg" alt="">
+            </div>
+            <div class="city_card_ui_content" id="weekend">
+              <div class="city_card_ui_content_city" id="weekend">
+                Shimla
+              </div>
+              <div class="city_card_ui_content_state" id="weekend">
+                Himachal Pradesh
+              </div>
+              <div class="city_card_ui_content_dist" id="weekend">
+                <span class="material-icons-round md-12  ">drive_eta</span>
+                5-hour drive
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home_section" id="luxe">
+        <div class="home_section_title" id="luxe">
+          Finest Casas for you
+        </div>
+        <div class="casa_section_cards" id="luxe">
+          <div class="casa_section_card_ui"  onclick="location.href = 'details.html';" id="luxe">
+            <div class="casa_card_ui_img" id="luxe">
+              <img src="assets/porch.jpg" alt="">
+            </div>
+            <div class="casa_card_ui_content" id="luxe">
+              <div class="casa_card_ui_content_code_rate" id="luxe">
+                <div class="casa_card_ui_content_code" id="luxe">
+                  Casa
+                  <span class="casa_card_ui_content_number" id="luxe">
+                    #256
+                  </span>
+                </div>
+                <div class="casa_card_ui_content_rate" id="luxe">
+                  <span class="material-icons-round md-12">star_rate</span>
+                  4.8
+                </div>
+              </div>
+              <div class="casa_card_ui_content_area" id="luxe">
+                Nimri Colony
+              </div>
+              <div class="casa_card_ui_content_metadata_section" id="luxe">
+                <div class="casa_card_ui_content_metadata_left" id="luxe">
+                  <div class="casa_card_ui_content_metadata_top" id="luxe">
+                    <span class="material-icons-round md-12">door_front</span>
+                    <span class="casa_card_ui_content_metadata_number">3</span>
+                    room
+                  </div>
+                  <div class="casa_card_ui_content_metadata_bottom" id="luxe">
+                    <span class="material-icons-round md-12">shower</span>
+                    <span class="casa_card_ui_content_metadata_number">3</span>
+                    bathroom
+                  </div>
+                </div>
+                <div class="casa_card_ui_content_metadata_right" id="luxe">
+                  <div class="casa_card_ui_content_metadata_top" id="luxe">
+                    <span class="material-icons-round md-12">bed</span>
+                    <span class="casa_card_ui_content_metadata_number">3</span>
+                    bed
+                  </div>
+                  <div class="casa_card_ui_content_metadata_bottom" id="luxe">
+                    <span class="material-icons-round md-12">people</span>
+                    <span class="casa_card_ui_content_metadata_number">9</span>
+                    people
+                  </div>
+                </div>
+              </div>
+              <div class="casa_card_ui_content_price" id="luxe">
+                <span class="casa_card_ui_content_amount" id="luxe">₹4,190.00</span>
+                <span class="casa_card_ui_content_night" id="luxe">/ night</span>
+              </div>
+            </div>
+          </div>
+          <div class="casa_section_card_ui" id="luxe">
+            <div class="casa_card_ui_img" id="luxe">
+              <img src="assets/porch.jpg" alt="">
+            </div>
+            <div class="casa_card_ui_content" id="luxe">
+              <div class="casa_card_ui_content_code_rate" id="luxe">
+                <div class="casa_card_ui_content_code" id="luxe">
+                  Casa
+                  <span class="casa_card_ui_content_number" id="luxe">
+                    #256
+                  </span>
+                </div>
+                <div class="casa_card_ui_content_rate" id="luxe">
+                  <span class="material-icons-round md-12">star_rate</span>
+                  4.8
+                </div>
+              </div>
+              <div class="casa_card_ui_content_area" id="luxe">
+                Nimri Colony
+              </div>
+              <div class="casa_card_ui_content_metadata_section" id="luxe">
+                <div class="casa_card_ui_content_metadata_left" id="luxe">
+                  <div class="casa_card_ui_content_metadata_top" id="luxe">
+                    <span class="material-icons-round md-12">door_front</span>
+                    <span class="casa_card_ui_content_metadata_number">3</span>
+                    room
+                  </div>
+                  <div class="casa_card_ui_content_metadata_bottom" id="luxe">
+                    <span class="material-icons-round md-12">shower</span>
+                    <span class="casa_card_ui_content_metadata_number">3</span>
+                    bathroom
+                  </div>
+                </div>
+                <div class="casa_card_ui_content_metadata_right" id="luxe">
+                  <div class="casa_card_ui_content_metadata_top" id="luxe">
+                    <span class="material-icons-round md-12">bed</span>
+                    <span class="casa_card_ui_content_metadata_number">3</span>
+                    bed
+                  </div>
+                  <div class="casa_card_ui_content_metadata_bottom" id="luxe">
+                    <span class="material-icons-round md-12">people</span>
+                    <span class="casa_card_ui_content_metadata_number">9</span>
+                    people
+                  </div>
+                </div>
+              </div>
+              <div class="casa_card_ui_content_price" id="luxe">
+                <span class="casa_card_ui_content_amount" id="luxe">₹4,190.00</span>
+                <span class="casa_card_ui_content_night" id="luxe">/ night</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home_section" id="cheap">
+        <div class="home_section_title" id="cheap">
+          Casas Easy On The Pocket
+        </div>
+        <div class="casa_section_cards" id="cheap">
+          <div class="casa_section_card_ui" id="cheap">
+            <div class="casa_card_ui_img" id="cheap">
+              <img src="assets/shimla.jpg" alt="">
+            </div>
+            <div class="casa_card_ui_content" id="cheap">
+              <div class="casa_card_ui_content_code_rate" id="cheap">
+                <div class="casa_card_ui_content_code" id="cheap">
+                  Casa
+                  <span class="casa_card_ui_content_number" id="cheap">
+                    #417
+                  </span>
+                </div>
+                <div class="casa_card_ui_content_rate" id="cheap">
+                  <span class="material-icons-round md-12">star_rate</span>
+                  4.1
+                </div>
+              </div>
+              <div class="casa_card_ui_content_area" id="cheap">
+                Paschim Vihar
+              </div>
+              <div class="casa_card_ui_content_metadata_section" id="cheap">
+                <div class="casa_card_ui_content_metadata_left" id="cheap">
+                  <div class="casa_card_ui_content_metadata_top" id="cheap">
+                    <span class="material-icons-round md-12">door_front</span>
+                    <span class="casa_card_ui_content_metadata_number">2</span>
+                    room
+                  </div>
+                  <div class="casa_card_ui_content_metadata_bottom" id="cheap">
+                    <span class="material-icons-round md-12">shower</span>
+                    <span class="casa_card_ui_content_metadata_number">1</span>
+                    bathroom
+                  </div>
+                </div>
+                <div class="casa_card_ui_content_metadata_right" id="cheap">
+                  <div class="casa_card_ui_content_metadata_top" id="cheap">
+                    <span class="material-icons-round md-12">bed</span>
+                    <span class="casa_card_ui_content_metadata_number">2</span>
+                    bed
+                  </div>
+                  <div class="casa_card_ui_content_metadata_bottom" id="cheap">
+                    <span class="material-icons-round md-12">people</span>
+                    <span class="casa_card_ui_content_metadata_number">5</span>
+                    people
+                  </div>
+                </div>
+              </div>
+              <div class="casa_card_ui_content_price" id="cheap">
+                <span class="casa_card_ui_content_amount" id="cheap">₹1,855.00</span>
+                <span class="casa_card_ui_content_night" id="cheap">/ night</span>
+              </div>
+            </div>
+          </div>
+          <div class="casa_section_card_ui" id="cheap">
+            <div class="casa_card_ui_img" id="cheap">
+              <img src="assets/porch.jpg" alt="">
+            </div>
+            <div class="casa_card_ui_content" id="cheap">
+              <div class="casa_card_ui_content_code_rate" id="cheap">
+                <div class="casa_card_ui_content_code" id="cheap">
+                  Casa
+                  <span class="casa_card_ui_content_number" id="cheap">
+                    #256
+                  </span>
+                </div>
+                <div class="casa_card_ui_content_rate" id="cheap">
+                  <span class="material-icons-round md-12">star_rate</span>
+                  4.8
+                </div>
+              </div>
+              <div class="casa_card_ui_content_area" id="cheap">
+                Nimri Colony
+              </div>
+              <div class="casa_card_ui_content_metadata_section" id="cheap">
+                <div class="casa_card_ui_content_metadata_left" id="cheap">
+                  <div class="casa_card_ui_content_metadata_top" id="cheap">
+                    <span class="material-icons-round md-12">door_front</span>
+                    <span class="casa_card_ui_content_metadata_number">3</span>
+                    room
+                  </div>
+                  <div class="casa_card_ui_content_metadata_bottom" id="cheap">
+                    <span class="material-icons-round md-12">shower</span>
+                    <span class="casa_card_ui_content_metadata_number">3</span>
+                    bathroom
+                  </div>
+                </div>
+                <div class="casa_card_ui_content_metadata_right" id="cheap">
+                  <div class="casa_card_ui_content_metadata_top" id="cheap">
+                    <span class="material-icons-round md-12">bed</span>
+                    <span class="casa_card_ui_content_metadata_number">3</span>
+                    bed
+                  </div>
+                  <div class="casa_card_ui_content_metadata_bottom" id="cheap">
+                    <span class="material-icons-round md-12">people</span>
+                    <span class="casa_card_ui_content_metadata_number">9</span>
+                    people
+                  </div>
+                </div>
+              </div>
+              <div class="casa_card_ui_content_price" id="cheap">
+                <span class="casa_card_ui_content_amount" id="cheap">₹4,190.00</span>
+                <span class="casa_card_ui_content_night" id="cheap">/ night</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="assist_card" id="host_your_casa">
+        <div class="assist_card_ui" id="host_your_casa">
+          <div class="assist_card_ui_text" id="host_your_casa">
+            <div class="assist_card_ui_title" id="host_your_casa">
+              Host Your Casa!
+            </div>
+            <div class="assist_card_ui_subtitle" id="host_your_casa">
+              Onboard your homestay and start earning from the first day!
+            </div>
+            <div class="assist_card_ui_cta" id="host_your_casa">
+              Know More
+              <span class="material-icons-round md-12  " id="host_your_casa">arrow_forward</span>
+            </div>
+          </div>
+          <div class="assist_card_ui_img" id="host_your_casa">
+            <img src="assets/host_casa.png" alt="">
+          </div>
+
+        </div>
+      </div>
+      <div class="home_section" id="pets">
+        <div class="home_section_title" id="pets">
+          For Your Furry Friends
+        </div>
+        <div class="casa_section_cards" id="pets">
+          <div class="casa_section_card_ui" id="pets">
+            <div class="casa_card_ui_img" id="pets">
+              <img src="assets/shimla.jpg" alt="">
+            </div>
+            <div class="casa_card_ui_content" id="pets">
+              <div class="casa_card_ui_content_code_rate" id="pets">
+                <div class="casa_card_ui_content_code" id="pets">
+                  Casa
+                  <span class="casa_card_ui_content_number" id="pets">
+                    #504
+                  </span>
+                </div>
+                <div class="casa_card_ui_content_rate" id="pets">
+                  <span class="material-icons-round md-12">star_rate</span>
+                  3.8
+                </div>
+              </div>
+              <div class="casa_card_ui_content_area" id="pets">
+                Dwarka, Sec-18
+              </div>
+              <div class="casa_card_ui_content_metadata_section" id="pets">
+                <div class="casa_card_ui_content_metadata_left" id="pets">
+                  <div class="casa_card_ui_content_metadata_top" id="pets">
+                    <span class="material-icons-round md-12">door_front</span>
+                    <span class="casa_card_ui_content_metadata_number">1</span>
+                    room
+                  </div>
+                  <div class="casa_card_ui_content_metadata_bottom" id="pets">
+                    <span class="material-icons-round md-12">shower</span>
+                    <span class="casa_card_ui_content_metadata_number">1</span>
+                    bathroom
+                  </div>
+                </div>
+                <div class="casa_card_ui_content_metadata_right" id="pets">
+                  <div class="casa_card_ui_content_metadata_top" id="pets">
+                    <span class="material-icons-round md-12">bed</span>
+                    <span class="casa_card_ui_content_metadata_number">2</span>
+                    bed
+                  </div>
+                  <div class="casa_card_ui_content_metadata_bottom" id="pets">
+                    <span class="material-icons-round md-12">people</span>
+                    <span class="casa_card_ui_content_metadata_number">3</span>
+                    people
+                  </div>
+                </div>
+              </div>
+              <div class="casa_card_ui_content_price" id="pets">
+                <span class="casa_card_ui_content_amount" id="pets">₹1,099.00</span>
+                <span class="casa_card_ui_content_night" id="pets">/ night</span>
+              </div>
+            </div>
+          </div>
+          <div class="casa_section_card_ui" id="pets">
+            <div class="casa_card_ui_img" id="pets">
+              <img src="assets/porch.jpg" alt="">
+            </div>
+            <div class="casa_card_ui_content" id="pets">
+              <div class="casa_card_ui_content_code_rate" id="pets">
+                <div class="casa_card_ui_content_code" id="pets">
+                  Casa
+                  <span class="casa_card_ui_content_number" id="pets">
+                    #256
+                  </span>
+                </div>
+                <div class="casa_card_ui_content_rate" id="pets">
+                  <span class="material-icons-round md-12">star_rate</span>
+                  4.8
+                </div>
+              </div>
+              <div class="casa_card_ui_content_area" id="pets">
+                Nimri Colony
+              </div>
+              <div class="casa_card_ui_content_metadata_section" id="pets">
+                <div class="casa_card_ui_content_metadata_left" id="pets">
+                  <div class="casa_card_ui_content_metadata_top" id="pets">
+                    <span class="material-icons-round md-12">door_front</span>
+                    <span class="casa_card_ui_content_metadata_number">3</span>
+                    room
+                  </div>
+                  <div class="casa_card_ui_content_metadata_bottom" id="pets">
+                    <span class="material-icons-round md-12">shower</span>
+                    <span class="casa_card_ui_content_metadata_number">3</span>
+                    bathroom
+                  </div>
+                </div>
+                <div class="casa_card_ui_content_metadata_right" id="pets">
+                  <div class="casa_card_ui_content_metadata_top" id="pets">
+                    <span class="material-icons-round md-12">bed</span>
+                    <span class="casa_card_ui_content_metadata_number">3</span>
+                    bed
+                  </div>
+                  <div class="casa_card_ui_content_metadata_bottom" id="pets">
+                    <span class="material-icons-round md-12">people</span>
+                    <span class="casa_card_ui_content_metadata_number">9</span>
+                    people
+                  </div>
+                </div>
+              </div>
+              <div class="casa_card_ui_content_price" id="pets">
+                <span class="casa_card_ui_content_amount" id="pets">₹4,190.00</span>
+                <span class="casa_card_ui_content_night" id="pets">/ night</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="made-by">
+        Made with <span class="material-icons-round md-16" id="heart_icon">favorite</span> by <span class="dev_names">Dhairyadev</span> and <span class="dev_names">Kartik.</span>
+      </div>
+
+
+      <div class="bottom_sheet_scrim dates_scrim" id="dates">
+        <div class="bottom_sheet_ui dates_sheet" id="dates">
+          <hr class="bottom_sheet_handle">
+          <div class="bottom_sheet_header" id="dates">
+            <div class="bottom_sheet_heading" id="dates">
+              Select Dates
+            </div>
+          </div>
+          <div class="bottom_sheet_filter_content" id="dates">
+            <div class="filter_section" id="dates">
+              <div class="price_range_section" id="dates">
+                <div class="price_limit" id="low">
+                  <div class="filter_subtitle" id="low">
+                    Check In
+                  </div>
+                  <div class="search-input-field">
+                    <span class="material-icons-round md-20  ">event</span>
+                    <input type="date" class=".input-dates" placeholder="Pick a date">
+                  </div>
+                </div>
+                <div class="price_limit" id="low">
+                  <div class="filter_subtitle" id="low">
+                    Check Out
+                  </div>
+                  <div class="search-input-field">
+                    <span class="material-icons-round md-20  ">event</span>
+                    <input type="date" class=".input-dates" placeholder="Pick a date">
+                  </div>
+                </div>
+                <button type="button" class="primary-btn dates" id="home-search" onclick="hideDates()">
+                  <span class="primary_btn_text">Confirm</span>
+                  <span class="material-icons-round  " id="login" >done</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom_sheet_scrim persons_scrim" id="persons">
+        <div class="bottom_sheet_ui persons_sheet" id="persons">
+          <hr class="bottom_sheet_handle">
+          <div class="bottom_sheet_header" id="persons">
+            <div class="bottom_sheet_heading" id="persons">
+              Add Persons
+            </div>
+          </div>
+          <div class="bottom_sheet_filter_content" id="persons">
+            <div class="filter_section" id="persons">
+              <div class="price_range_section" id="dates">
+                <div class="price_limit" id="low">
+                  <div class="filter_subtitle" id="low">
+                    Children (<13 years)
+                  </div>
+                  <div class="search-input-field">
+                    <span class="material-icons-round md-20  ">child_care</span>
+                    <input type="number" class=".input-dates" placeholder="Add Children">
+                  </div>
+                </div>
+                <div class="price_limit" id="low">
+                  <div class="filter_subtitle" id="low">
+                    Adults (>13 years)
+                  </div>
+                  <div class="search-input-field">
+                    <span class="material-icons-round md-20  ">person</span>
+                    <input type="number" class=".input-dates" placeholder="Add Adults">
+                  </div>
+                </div>
+                <button type="button" class="primary-btn dates" id="home-search" onclick="hidePersons()">
+                  <span class="primary_btn_text">Confirm</span>
+                  <span class="material-icons-round  " id="login" >done</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+
+    var dates_sheet = document.getElementsByClassName("dates_sheet")[0];
+    var dates_scrim = document.getElementsByClassName("dates_scrim")[0];
+
+    var persons_sheet = document.getElementsByClassName("persons_sheet")[0];
+    var persons_scrim = document.getElementsByClassName("persons_scrim")[0];
+
+
+    function showDates(){
+      dates_scrim.style.opacity="100%";
+      dates_sheet.style.bottom="0px";
+      dates_scrim.style.display="flex";
+      dates_sheet.style.display="flex";
+    }
+
+    function showPersons(){
+      persons_scrim.style.opacity="100%";
+      persons_sheet.style.bottom="0px";
+      persons_scrim.style.display="flex";
+      persons_sheet.style.display="flex";
+    }
+
+    function hideDates(){
+      dates_sheet.style.bottom="-750px";
+      dates_scrim.style.opacity="0%";
+      dates_scrim.style.display="none";
+      dates_sheet.style.display="none";
+    }
+
+    function hidePersons(){
+      persons_sheet.style.bottom="-750px";
+      persons_scrim.style.opacity="0%";
+      persons_scrim.style.display="none";
+      persons_sheet.style.display="none";
+    }
+
+
+    </script>
+
+  </body>
+</html>

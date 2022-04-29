@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <title>Casa Mia — Book your homestay today!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--LOGIN-->
+    <div class="main-container" id="results-search">
+      <div class="navbar" id="results-search">
+          <div class="location">
+            <div class="icon">
+              <span class="material-icons-round md-14">place</span>
+            </div>
+            <div class="text">
+              Ashok Vihar, New Delhi
+            </div>
+          </div>
+          <div class="hamburger">
+            <span class="material-icons-round md-20">menu</span>
+          </div>
+        </div>
+
+      <form action="search.html">
+        <div class="form-card" id="results-search">
+          <div class="search_top_section">
+            <div class="search_top_section_text" id="results-search">
+              <span class="search_title" id="results-search">Casas in </span>
+              <span class="city_name" id="results-search">Jaipur</span>
+            </div>
+            <button type="button" class="primary-btn" id="results-search" onclick="location.href='home.html'">
+              <span class="material-icons-round  md-24" id="login" >search</span>
+            </button>
+          </div>
+          <div class="search_mid_section" id="results-search">
+            <span class="material-icons-round  md-20" id="login" >date_range</span>
+            <span class="date_range_init" id="results-search">09/10/2021</span> - <span class="date_range_fin" id="results-search">10/10/2021</span>
+          </div>
+          <div class="search_mid_section" id="results-search">
+            <span class="material-icons-round  md-20" id="login" >people</span>
+            <span class="pax_num" id="results-search">2</span> <span class="pax_text" id="results-search">adults</span>
+          </div>
+
+        </div>
+      </form>
+
+      <div class="filter_sort" id="results-search">
+        <div class="filters" onclick="showFilters()" id="results-search">
+          <div class="material-icons-round md-16  " id="facing_issues">filter_alt</div>
+          <div class="filters_text">Filters</div>
+        </div>
+        <div class="filters" onclick="showSort()" id="results-search">
+          <div class="material-icons-round md-16  " id="facing_issues">sort</div>
+          <div class="filters_text">Popularity</div>
+        </div>
+      </div>
+
+      <div class="chips" id="results-search">
+        <div class="chips_ui" id="selected">
+          Pet Friendly
+        </div>
+        <div class="chips_ui" id="deselected">
+          Under 1K
+        </div>
+        <div class="chips_ui" id="deselected">
+          Premium Living
+        </div>
+        <div class="chips_ui" id="deselected">
+          Swimming Pool
+        </div>
+        <div class="chips_ui" id="deselected">
+          Kitchen
+        </div>
+      </div>
+
+      <div class="home_section" id="results-search">
+        <div class="casa_section_cards"  id="results-search">
+          <div class="casa_section_card_ui" onclick="location.href = 'details.html';" id="results-search">
+            <div class="casa_card_ui_img" id="results-search">
+              <img src="assets/porch.jpg" alt="">
+            </div>
+            <div class="casa_card_ui_content" id="results-search">
+              <div class="casa_card_ui_content_code_rate" id="results-search">
+                <div class="casa_card_ui_content_code" id="results-search">
+                  Casa
+                  <span class="casa_card_ui_content_number" id="results-search">
+                    #256
+                  </span>
+                </div>
+                <div class="casa_card_ui_content_rate" id="results-search">
+                  <span class="material-icons-round md-12">star_rate</span>
+                  4.8
+                </div>
+              </div>
+              <div class="casa_card_ui_content_area" id="results-search">
+                Nimri Colony
+              </div>
+              <div class="casa_card_ui_content_metadata_section" id="results-search">
+                <div class="casa_card_ui_content_metadata_left" id="results-search">
+                  <div class="casa_card_ui_content_metadata_top" id="results-search">
+                    <span class="material-icons-round md-12">door_front</span>
+                    <span class="casa_card_ui_content_metadata_number">3</span>
+                    room
+                  </div>
+                  <div class="casa_card_ui_content_metadata_bottom" id="results-search">
+                    <span class="material-icons-round md-12">shower</span>
+                    <span class="casa_card_ui_content_metadata_number">3</span>
+                    bathroom
+                  </div>
+                </div>
+                <div class="casa_card_ui_content_metadata_right" id="results-search">
+                  <div class="casa_card_ui_content_metadata_top" id="results-search">
+                    <span class="material-icons-round md-12">bed</span>
+                    <span class="casa_card_ui_content_metadata_number">3</span>
+                    bed
+                  </div>
+                  <div class="casa_card_ui_content_metadata_bottom" id="results-search">
+                    <span class="material-icons-round md-12">people</span>
+                    <span class="casa_card_ui_content_metadata_number">9</span>
+                    people
+                  </div>
+                </div>
+              </div>
+              <div class="casa_card_ui_content_price" id="results-search">
+                <span class="casa_card_ui_content_amount" id="results-search">₹4,190.00</span>
+                <span class="casa_card_ui_content_night" id="results-search">/ night</span>
+              </div>
+            </div>
+          </div>
+          <div class="casa_section_card_ui" id="results-search">
+            <div class="casa_card_ui_img" id="results-search">
+              <img src="assets/porch 2.jpg" alt="">
+            </div>
+            <div class="casa_card_ui_content" id="results-search">
+              <div class="casa_card_ui_content_code_rate" id="results-search">
+                <div class="casa_card_ui_content_code" id="results-search">
+                  Casa
+                  <span class="casa_card_ui_content_number" id="results-search">
+                    #504
+                  </span>
+                </div>
+                <div class="casa_card_ui_content_rate" id="results-search">
+                  <span class="material-icons-round md-12">star_rate</span>
+                  4.7
+                </div>
+              </div>
+              <div class="casa_card_ui_content_area" id="results-search">
+                Dwarka, Sec-18
+              </div>
+              <div class="casa_card_ui_content_metadata_section" id="results-search">
+                <div class="casa_card_ui_content_metadata_left" id="results-search">
+                  <div class="casa_card_ui_content_metadata_top" id="results-search">
+                    <span class="material-icons-round md-12">door_front</span>
+                    <span class="casa_card_ui_content_metadata_number">1</span>
+                    room
+                  </div>
+                  <div class="casa_card_ui_content_metadata_bottom" id="results-search">
+                    <span class="material-icons-round md-12">shower</span>
+                    <span class="casa_card_ui_content_metadata_number">1</span>
+                    bathroom
+                  </div>
+                </div>
+                <div class="casa_card_ui_content_metadata_right" id="results-search">
+                  <div class="casa_card_ui_content_metadata_top" id="results-search">
+                    <span class="material-icons-round md-12">bed</span>
+                    <span class="casa_card_ui_content_metadata_number">1</span>
+                    bed
+                  </div>
+                  <div class="casa_card_ui_content_metadata_bottom" id="results-search">
+                    <span class="material-icons-round md-12">people</span>
+                    <span class="casa_card_ui_content_metadata_number">3</span>
+                    people
+                  </div>
+                </div>
+              </div>
+              <div class="casa_card_ui_content_price" id="results-search">
+                <span class="casa_card_ui_content_amount" id="results-search">₹5,942.00</span>
+                <span class="casa_card_ui_content_night" id="results-search">/ night</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="assist_card" id="facing_issues">
+        <div class="assist_card_ui" id="facing_issues">
+          <div class="assist_card_ui_text" id="facing_issues">
+            <div class="assist_card_ui_title" id="facing_issues">
+              Facing Any Issues?
+            </div>
+            <div class="assist_card_ui_subtitle" id="facing_issues">
+              We'll be glad to assist you!
+            </div>
+            <div class="assist_card_ui_cta" id="facing_issues">
+              Chat With Us
+              <span class="material-icons-round md-12  " id="facing_issues">arrow_forward</span>
+            </div>
+          </div>
+          <div class="assist_card_ui_img" id="facing_issues">
+            <img src="assets/chat_with_us.png" alt="">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="home_section" id="results-search">
+        <div class="casa_section_cards" id="results-search">
+          <div class="casa_section_card_ui" id="results-search">
+            <div class="casa_card_ui_img" id="results-search">
+              <img src="assets/shimla.jpg" alt="">
+            </div>
+            <div class="casa_card_ui_content" id="results-search">
+              <div class="casa_card_ui_content_code_rate" id="results-search">
+                <div class="casa_card_ui_content_code" id="results-search">
+                  Casa
+                  <span class="casa_card_ui_content_number" id="results-search">
+                    #638
+                  </span>
+                </div>
+                <div class="casa_card_ui_content_rate" id="results-search">
+                  <span class="material-icons-round md-12">star_rate</span>
+                  3.8
+                </div>
+              </div>
+              <div class="casa_card_ui_content_area" id="results-search">
+                Model Town - II
+              </div>
+              <div class="casa_card_ui_content_metadata_section" id="results-search">
+                <div class="casa_card_ui_content_metadata_left" id="results-search">
+                  <div class="casa_card_ui_content_metadata_top" id="results-search">
+                    <span class="material-icons-round md-12">door_front</span>
+                    <span class="casa_card_ui_content_metadata_number">3</span>
+                    room
+                  </div>
+                  <div class="casa_card_ui_content_metadata_bottom" id="results-search">
+                    <span class="material-icons-round md-12">shower</span>
+                    <span class="casa_card_ui_content_metadata_number">3</span>
+                    bathroom
+                  </div>
+                </div>
+                <div class="casa_card_ui_content_metadata_right" id="results-search">
+                  <div class="casa_card_ui_content_metadata_top" id="results-search">
+                    <span class="material-icons-round md-12">bed</span>
+                    <span class="casa_card_ui_content_metadata_number">2</span>
+                    bed
+                  </div>
+                  <div class="casa_card_ui_content_metadata_bottom" id="results-search">
+                    <span class="material-icons-round md-12">people</span>
+                    <span class="casa_card_ui_content_metadata_number">6</span>
+                    people
+                  </div>
+                </div>
+              </div>
+              <div class="casa_card_ui_content_price" id="results-search">
+                <span class="casa_card_ui_content_amount" id="results-search">₹1,099.00</span>
+                <span class="casa_card_ui_content_night" id="results-search">/ night</span>
+              </div>
+            </div>
+          </div>
+          <div class="casa_section_card_ui" id="results-search">
+            <div class="casa_card_ui_img" id="results-search">
+              <img src="assets/porch.jpg" alt="">
+            </div>
+            <div class="casa_card_ui_content" id="results-search">
+              <div class="casa_card_ui_content_code_rate" id="results-search">
+                <div class="casa_card_ui_content_code" id="results-search">
+                  Casa
+                  <span class="casa_card_ui_content_number" id="results-search">
+                    #690
+                  </span>
+                </div>
+                <div class="casa_card_ui_content_rate" id="results-search">
+                  <span class="material-icons-round md-12">star_rate</span>
+                  4.1
+                </div>
+              </div>
+              <div class="casa_card_ui_content_area" id="results-search">
+                Ashok Vihar
+              </div>
+              <div class="casa_card_ui_content_metadata_section" id="results-search">
+                <div class="casa_card_ui_content_metadata_left" id="results-search">
+                  <div class="casa_card_ui_content_metadata_top" id="results-search">
+                    <span class="material-icons-round md-12">door_front</span>
+                    <span class="casa_card_ui_content_metadata_number">1</span>
+                    room
+                  </div>
+                  <div class="casa_card_ui_content_metadata_bottom" id="results-search">
+                    <span class="material-icons-round md-12">shower</span>
+                    <span class="casa_card_ui_content_metadata_number">1</span>
+                    bathroom
+                  </div>
+                </div>
+                <div class="casa_card_ui_content_metadata_right" id="results-search">
+                  <div class="casa_card_ui_content_metadata_top" id="results-search">
+                    <span class="material-icons-round md-12">bed</span>
+                    <span class="casa_card_ui_content_metadata_number">2</span>
+                    bed
+                  </div>
+                  <div class="casa_card_ui_content_metadata_bottom" id="results-search">
+                    <span class="material-icons-round md-12">people</span>
+                    <span class="casa_card_ui_content_metadata_number">3</span>
+                    people
+                  </div>
+                </div>
+              </div>
+              <div class="casa_card_ui_content_price" id="results-search">
+                <span class="casa_card_ui_content_amount" id="results-search">₹4,190.00</span>
+                <span class="casa_card_ui_content_night" id="results-search">/ night</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="made-by">
+        Made with <span class="material-icons-round md-16" id="heart_icon">favorite</span> by <span class="dev_names">Dhairyadev</span> and <span class="dev_names">Kartik.</span>
+      </div>
+
+      <!--    SORT SHEET !-->
+
+
+      <div class="bottom_sheet_scrim sort_scrim" id="sort">
+        <div class="bottom_sheet_ui sort_sheet" id="sort">
+          <hr class="bottom_sheet_handle">
+          <div class="bottom_sheet_header" id="results-search">
+            <div class="bottom_sheet_heading" id="results-search">
+              Sort by
+            </div>
+            <div class="bottom_sheet_header_cta" onclick="hideSort()" id="results-search">
+              Done
+            </div>
+          </div>
+          <div class="bottom_sheet_sort_content" id="results-search">
+            <div class="sort_by_option pop"  id="selected">
+              <div class="material-icons-round md-20">trending_up</div>
+              <div class="sort_by_option_name" id="deselected">Popularity</div>
+            </div>
+            <div class="sort_by_option lth" id="deselected">
+              <div class="material-icons-round md-20">north_east</div>
+              <div class="sort_by_option_name" id="selected">Price (Low → High)</div>
+            </div>
+            <div class="sort_by_option htl" id="deselected">
+              <div class="material-icons-round md-20">south_west</div>
+              <div class="sort_by_option_name" id="deselected">Price (High → Low)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- !-->
+
+
+      <!--     FILTERS SHEET   !-->
+
+      <div class="bottom_sheet_scrim filter_scrim" id="filter">
+        <div class="bottom_sheet_ui filter_sheet" id="filter">
+          <hr class="bottom_sheet_handle">
+          <div class="bottom_sheet_header" id="filter">
+            <div class="bottom_sheet_heading" id="filter">
+              Filters
+            </div>
+            <div class="bottom_sheet_header_cta" onclick="hideFilters()" id="filter">
+              Done
+            </div>
+          </div>
+          <div class="bottom_sheet_filter_content" id="filter">
+            <div class="filter_section" id="filter">
+              <div class="filter_heading" id="filter">
+                Price Range
+              </div>
+              <div class="price_range_section" id="filter">
+                <div class="price_limit" id="low">
+                  <div class="filter_subtitle" id="low">
+                    Min Price
+                  </div>
+                  <div class="price_limit_txt" id="low">
+                    <span class="rupee_symbol" id="low">
+                      ₹
+                    </span>
+                    <input type="number">
+                  </div>
+                </div>
+                <div class="price_limit" id="high">
+                  <div class="filter_subtitle" id="high">
+                    Max Price
+                  </div>
+                  <div class="price_limit_txt" id="high">
+                    <span class="rupee_symbol" id="high">
+                      ₹
+                    </span>
+                    <input type="number">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter_section" id="filter">
+              <div class="filter_heading" id="filter">
+                Rooms & Beds
+              </div>
+              <div class="filter_btn_selection" id="filter">
+                <div class="filter_subtitle" id="rooms">
+                  Rooms
+                </div>
+                <div class="filter_btn_selectors" id="rooms">
+                  <div class="filter_btns" id="selected">
+                    Any
+                  </div>
+                  <div class="filter_btns" id="deselected">
+                    1+
+                  </div>
+                  <div class="filter_btns" id="deselected">
+                    2+
+                  </div>
+                  <div class="filter_btns" id="deselected">
+                    3+
+                  </div>
+                  <div class="filter_btns" id="deselected">
+                    4+
+                  </div>
+                </div>
+              </div>
+              <hr class="details_divider" id="filters">
+              <div class="filter_btn_selection" id="filter">
+                <div class="filter_subtitle" id="rooms">
+                  Beds
+                </div>
+                <div class="filter_btn_selectors" id="rooms">
+                  <div class="filter_btns" id="deselected">
+                    Any
+                  </div>
+                  <div class="filter_btns" id="deselected">
+                    1+
+                  </div>
+                  <div class="filter_btns" id="selected">
+                    2+
+                  </div>
+                  <div class="filter_btns" id="deselected">
+                    3+
+                  </div>
+                  <div class="filter_btns" id="deselected">
+                    4+
+                  </div>
+                </div>
+              </div>
+              <hr class="details_divider" id="filters">
+              <div class="filter_btn_selection" id="filter">
+                <div class="filter_subtitle" id="rooms">
+                  Bathrooms
+                </div>
+                <div class="filter_btn_selectors" id="rooms">
+                  <div class="filter_btns" id="deselected">
+                    Any
+                  </div>
+                  <div class="filter_btns" id="deselected">
+                    1+
+                  </div>
+                  <div class="filter_btns" id="deselected">
+                    2+
+                  </div>
+                  <div class="filter_btns" id="selected">
+                    3+
+                  </div>
+                  <div class="filter_btns" id="deselected">
+                    4+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter_section" id="filter">
+              <div class="filter_heading" id="filter">
+                Amenities
+              </div>
+              <div class="checkbox_selection_list" id="filter">
+                <div class="checkbox_items">
+                  <div class="filter_subtitle" id="filter">
+                    Kitchen
+                  </div>
+                  <div class="checkbox" id="selected">
+                    <input type="checkbox" id="kitchen" checked="true">
+                  </div>
+                </div>
+                <div class="checkbox_items">
+                  <div class="filter_subtitle" id="filter">
+                    Laundromat
+                  </div>
+                  <div class="checkbox" id="deselected">
+                    <input type="checkbox" id="laundromat" checked="false">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter_section" id="filter">
+              <div class="filter_heading" id="filter">
+                Facilities
+              </div>
+              <div class="checkbox_selection_list" id="filter">
+                <div class="checkbox_items">
+                  <div class="filter_subtitle" id="filter">
+                    Gymnasium
+                  </div>
+                  <div class="checkbox" id="selected">
+                    <input type="checkbox" id="kitchen" checked="true">
+                  </div>
+                </div>
+                <div class="checkbox_items">
+                  <div class="filter_subtitle" id="filter">
+                    Free WiFi
+                  </div>
+                  <div class="checkbox" id="deselected">
+                    <input type="checkbox" id="laundromat" checked="false">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter_section" id="filter">
+              <div class="filter_heading" id="filter">
+                Casa Rules
+              </div>
+              <div class="checkbox_selection_list" id="filter">
+                <div class="checkbox_items">
+                  <div class="filter_subtitle" id="filter">
+                    Pets Allowed
+                  </div>
+                  <div class="checkbox" id="selected">
+                    <input type="checkbox" id="kitchen" checked="true">
+                  </div>
+                </div>
+                <div class="checkbox_items">
+                  <div class="filter_subtitle" id="filter">
+                    Smoking Allowed
+                  </div>
+                  <div class="checkbox" id="deselected">
+                    <input type="checkbox" id="laundromat" checked="false">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--  !-->
+
+    </div>
+
+    <script type="text/javascript">
+
+    var filter_sheet = document.getElementsByClassName("filter_sheet")[0];
+    var filter_scrim = document.getElementsByClassName("filter_scrim")[0];
+
+    var sort_sheet = document.getElementsByClassName("sort_sheet")[0];
+    var sort_scrim = document.getElementsByClassName("sort_scrim")[0];
+
+
+    function showFilters(){
+      filter_scrim.style.opacity="100%";
+      filter_sheet.style.bottom="0px";
+      filter_scrim.style.display="flex";
+      filter_sheet.style.display="flex";
+    }
+
+    function showSort(){
+      sort_scrim.style.opacity="100%";
+      sort_sheet.style.bottom="0px";
+      sort_scrim.style.display="flex";
+      sort_sheet.style.display="flex";
+    }
+
+    function hideFilters(){
+      filter_sheet.style.bottom="-750px";
+      filter_scrim.style.opacity="0%";
+      filter_scrim.style.display="none";
+      filter_sheet.style.display="none";
+    }
+
+    function hideSort(){
+      sort_sheet.style.bottom="-750px";
+      sort_scrim.style.opacity="0%";
+      sort_scrim.style.display="none";
+      sort_sheet.style.display="none";
+    }
+
+
+    </script>
+
+  </body>
+</html>

@@ -324,7 +324,6 @@ em{
   z-index: -2;
   height:30rem;
   width:30rem;
-  right:-2rem;
   border: 6.4rem solid var(--green);
   border-radius:30rem;
   filter: drop-shadow(0px 0px 7.2rem rgba(10, 207, 131, 0.32));

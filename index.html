@@ -37,8 +37,8 @@
             <img src="Assets/Icons/arrow_top_right_square.svg" alt="" class="prim_btn_img">
           </button>
           <div class="social_icons">
-            <a href="https://www.bit.ly/BehanceDD" target="_blank" class="social_icon" ><img src="Assets/Icons/behance.svg"alt=""></a>
-            <a href="https://www.linkedin.com/in/dhairyadev"  target="_blank" class="social_icon" ><img src="Assets/Icons/linkedin.svg" alt=""></a>
+            <a href="https://www.bit.ly/BehanceDD" target="_blank" class="social_icon" id="behance"><img src="Assets/Icons/behance.svg"alt=""><p id="behance_t">Behance</p></a>
+            <a href="https://www.linkedin.com/in/dhairyadev"  target="_blank" class="social_icon" id="linkedin"><img src="Assets/Icons/linkedin.svg" alt=""><p id="linkedin_t">LinkedIn</p></a>
           </div>
         </div>
         <div class="hero-right">
@@ -367,4 +367,21 @@
       <hr class="exp-mid" id="final-hr">
     </div>
   </body>
+
+  <script type="text/javascript">
+    behance_btn = document.getElementById("behance");
+    linkedin_btn = document.getElementById("linkedin");
+    behance = document.getElementById("behance_t");
+    linkedin = document.getElementById("linkedin_t");
+
+    behance_btn.onmouseover = function(){
+      behance.classList.toggle("social_hover");
+    };
+
+    behance_btn.onmouseleave = function(){
+      behance.classList.toggle("social_hover");
+    };
+
+
+  </script>
 </html>
